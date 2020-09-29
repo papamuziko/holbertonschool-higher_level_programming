@@ -9,7 +9,6 @@
  */
 int check_cycle(listint_t *list)
 {
-	/*
 	listint_t *slow = list, *fast = list;
 
 	while (fast && fast->next)
@@ -18,8 +17,8 @@ int check_cycle(listint_t *list)
 		fast = fast->next->next;
 		if (slow == fast)
 			return (1);
-	}*/
-	
+	}
+	/*
 	listint_t *check;
 	listint_t *current;
 
@@ -41,6 +40,6 @@ int check_cycle(listint_t *list)
 		}
 		check = check->next;
 	}
-	
+	*/
 	return (0);
 }
