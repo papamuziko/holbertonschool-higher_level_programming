@@ -12,7 +12,7 @@ request('https://swapi-api.hbtn.io/api/films/' + process.argv[2] + '/?format=jso
         console.log(cerror);
       }
       const jCharacter = JSON.parse(cbody);
-      console1111111.log(jCharacter.name);
+      console.log(jCharacter.name);
     });
   }
 });
