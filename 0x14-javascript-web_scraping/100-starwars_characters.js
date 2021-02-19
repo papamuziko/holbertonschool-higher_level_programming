@@ -5,7 +5,7 @@ request('https://swapi-api.hbtn.io/api/films/' + process.argv[2] + '/?format=jso
   if (error) {
     console.log(error);
   }
-  const jCharacters = N.parse(body).characters;
+  const jCharacters = JSON.parse(body).characters;
   for (let index = 0; index < jCharacters.length; index++) {
     request(jCharacters[index] + '?format=json', function (cerror, cresponse, cbody) {
       if (cerror) {
