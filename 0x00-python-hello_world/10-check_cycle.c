@@ -19,9 +19,10 @@ int check_cycle(listint_t *list)
 		if (slow == fast)
 			return (1);
 	}
+	*/
 	
 	/* Slowest version */
-	/*
+	
 	listint_t *check;
 	listint_t *current;
 
@@ -43,6 +44,6 @@ int check_cycle(listint_t *list)
 		}
 		check = check->next;
 	}
-	*/
+	
 	return (0);
 }
