@@ -10,6 +10,7 @@
 int check_cycle(listint_t *list)
 {
 	/* Most efficient version */
+	/*
 	listint_t *slow = list, *fast = list;
 
 	while (fast && fast->next)
