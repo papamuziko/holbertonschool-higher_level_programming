@@ -10,7 +10,7 @@
 int check_cycle(listint_t *list)
 {
 	/* Most efficient version */
-	/*
+	
 	listint_t *slow = list, *fast = list;
 
 	while (fast && fast->next)
@@ -20,10 +20,10 @@ int check_cycle(listint_t *list)
 		if (slow == fast)
 			return (1);
 	}
-	*/
+	
 	
 	/* Slowest version */
-	
+	/*
 	listint_t *check;
 	listint_t *current;
 
@@ -45,6 +45,6 @@ int check_cycle(listint_t *list)
 		}
 		check = check->next;
 	}
-	
+	*/
 	return (0);
 }
